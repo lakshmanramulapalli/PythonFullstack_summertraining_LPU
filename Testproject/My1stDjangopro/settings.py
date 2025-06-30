@@ -37,8 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'student',
-    'todolist',
+   # 'student',
+   # 'todolist',
+    'courses',
+    'jobs',
+    'patients',
+    'ecommerce',
 ]
 
 MIDDLEWARE = [
@@ -78,7 +82,7 @@ WSGI_APPLICATION = 'My1stDjangopro.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todolistdb',
+        'NAME': 'ecommercedb',
         'USER': 'postgres',
         'PASSWORD': 'lakshman',
         'HOST': 'localhost',
