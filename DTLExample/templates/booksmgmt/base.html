@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title> {% block title %} Books Page  {% endblock %}</title>
+</head>
+<body>
+<header>
+    <h1 class="bg-gray-700 text-white text-3xl text-center p-10">My Book Collections</h1>
+</header>
+{% block content %}
+    {% include 'booksmgmt/book_list.html' %}
+
+{% endblock %}
+<footer class="bg-gray-700 text-white text-3xl text-center p-5">
+    Copy right 2025
+</footer>
+</body>
+</html>
