@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Student</title>
+</head>
+<body>
+    <h2>Update Student Details</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label for="rollno">Roll No:</label><br>
+        <input type="number" id="rollno" name="roll_number" value="{{ student.roll_number }}"><br><br>
+
+        <label for="sname">Name:</label><br>
+        <input type="text" id="sname" name="name" value="{{ student.name }}"><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" value="{{ student.age }}"><br><br>
+
+        <input type="submit" value="Update">
+        <a href="{% url 'students_list' %}">Cancel</a>
+    </form>
+</body>
+</html>
